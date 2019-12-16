@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".photo_page"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image from Gallery"
+        android:layout_gravity="center"
+        android:id="@+id/select_from_gallery"/>
+
+       <GridView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:stretchMode="columnWidth"
+           android:padding="1dp"
+           android:numColumns="2"
+           android:id="@+id/gridCont"></GridView>
+
+
+</LinearLayout>

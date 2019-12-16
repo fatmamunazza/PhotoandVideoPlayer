@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome_page"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:gravity="center"
+        android:text="WELCOME TO THE PHOTO AND VIDEO PLAYER"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorAccent"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/Viewer"
+        android:layout_width="match_parent"
+
+        android:layout_height="528dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/m">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Select image"
+
+
+            android:id="@+id/select"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Crop image"
+            android:id="@+id/crop"/>
+    </LinearLayout>
+</RelativeLayout>
